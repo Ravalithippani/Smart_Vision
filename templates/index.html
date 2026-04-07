@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureVision - Deepfake Detection AI</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <!-- GLOWING CIRCLES CLUSTER -->
+    <div id="glow-cluster">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+        <div class="glow-blob blob-3"></div>
+        <div class="glow-blob blob-4"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            SecureVision
+        </div>
+        <div class="nav-actions">
+            <a href="#demo" class="nav-link">Demo</a>
+            <a href="#how" class="nav-link">How It Works</a>
+            <a href="/upload" class="cta-btn">Get Access</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>The Truth Behind <br><span class="highlight-text">Every Pixel.</span></h1>
+                    <p>Advanced forensic AI that detects deepfakes, voice cloning, and synthetic manipulation in real-time. Restore trust in digital media.</p>
+                    <a href="/upload" class="cta-btn">Launch Scanner</a>
+                </div>
+                <div class="hero-card-wrapper data-tilt-element">
+                    <img src="/static/images/ai4.jpg" alt="AI Analysis Subject" class="hero-card-img" id="hero-target">
+                    <div class="authenticity-badge">
+                        <span>●</span> VERIFIED HUMAN
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEMO SECTION -->
+    <section id="demo">
+        
+        <!-- INFINITE SCROLLING TEXT BACKGROUND -->
+        <div class="bg-keywords-wrapper">
+            <div class="keyword-row" style="top: 5%;" id="row-1">DEEPFAKE • DETECTION • FORENSIC • AI • MANIPULATION • TRUTH • VISION •</div>
+            <div class="keyword-row" style="top: 30%;" id="row-2">NEURAL • NETWORK • WAVEFORM • METADATA • PIXEL • AUTHENTICITY •</div>
+            <div class="keyword-row" style="top: 55%;" id="row-3">SYNTHETIC • AUDIO • VIDEO • VERIFICATION • PROTECT • SIGNAL •</div>
+            <div class="keyword-row" style="top: 80%;" id="row-4">ALGORITHM • GLITCH • PHOTON • SPECTRAL • BIOMETRIC • SECURITY •</div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <h2>Live Analysis Pipeline</h2>
+                <p style="color: var(--text-muted);">Hover over the viewport to enhance signal detection.</p>
+            </div>
+            
+            <div class="demo-interface-wrapper">
+                <div class="scan-viewport data-tilt-element" id="demo-target">
+                    <div class="grid-overlay"></div>
+                    <img src="/static/images/ai2.jpg" alt="Scan Target" class="scan-image">
+                    <div class="scan-overlay"></div>
+                    <div class="scan-line" id="scan-line"></div>
+                </div>
+
+                <div class="hud-panel">
+                    <div class="hud-group">
+                        <div class="status-dot"></div>
+                        <span id="status-text">INITIALIZING...</span>
+                    </div>
+                    <div class="hud-group">
+                        <span>CONFIDENCE: <span id="confidence-val" class="confidence-meter">00.0</span>%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section id="how">
+        <div class="container">
+            <div class="steps-wrapper">
+                <h2>Tri-Layer Verification</h2>
+                
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Signal Ingestion</h3>
+                    <p>We decompose media into raw frequency bands and RGB channels, stripping compression artifacts to reveal the source data.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Biological Anomaly Check</h3>
+                    <p>Our models analyze pulse rates via remote photoplethysmography and micro-expressions inconsistent with human biology.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Generative Fingerprinting</h3>
+                    <p>We cross-reference latent noise patterns against a database of known AI generators (Diffusion, GANs, Autoencoders).</p>
+                </div>
+            </div>
+
+            <div class="tech-visual-wrapper data-tilt-element">
+                <img src="/static/images/ai3.png" alt="Neural Network Visualization" class="tech-img" id="how-target">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 SecureVision AI. Protecting Digital Reality.</p>
+    </footer>
+
+    <!-- ANIMATION LOGIC -->
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

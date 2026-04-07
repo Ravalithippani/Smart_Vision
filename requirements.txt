@@ -1,0 +1,8 @@
+flask
+torch
+torchvision
+transformers
+librosa
+numpy
+Pillow
+accelerate
